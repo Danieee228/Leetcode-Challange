@@ -45,5 +45,5 @@ class Solution {
       }
     }
     return true;
-  } 
+  }
 }
