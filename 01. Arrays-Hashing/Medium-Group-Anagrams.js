@@ -1,3 +1,5 @@
+
+// TODO: Refactor loop
 class Solution {
   /**
    * @param {string[]} strs
@@ -15,7 +17,7 @@ class Solution {
       if (group.has(key)) {
         group.get(key).push(strs[i]);
       } else {
-        group.set(key, [strs[i]]);                                                                                                                                     
+        group.set(key, [strs[i]]);
       }
     }
     return Array.from(group.values());
