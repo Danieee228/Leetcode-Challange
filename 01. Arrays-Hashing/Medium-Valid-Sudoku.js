@@ -1,3 +1,4 @@
+// TODO: Optimize space complexity by Bit Mask
 class Solution {
   /**
    * @param {character[][]} board
@@ -23,7 +24,11 @@ class Solution {
           continue;
         }
         const boxId = Math.floor(r / 3) * 3 + Math.floor(c / 3);
-        if (cols[c].has(value) || rows[r].has(value) || boxes[boxId].has(value)) {
+        if (
+          cols[c].has(value) ||
+          rows[r].has(value) ||
+          boxes[boxId].has(value)
+        ) {
           return false;
         }
         rows[r].add(value);
