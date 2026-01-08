@@ -8,7 +8,7 @@ class Solution {
   encode(strs) {
     let res = "";
     for (const str of strs) {
-      let length = str.length;
+      let length = str.length;  
       res += length + "#" + str;
     }
     return res;

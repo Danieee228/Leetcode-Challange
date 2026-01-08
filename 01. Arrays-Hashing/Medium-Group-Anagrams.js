@@ -17,7 +17,7 @@ class Solution {
         group.set(key, []);
       }
       group.get(key).push(str);
-    }
+    } 
     return Array.from(group.values());
   }
 }
